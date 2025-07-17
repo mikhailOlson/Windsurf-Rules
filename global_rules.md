@@ -11,9 +11,9 @@
 1. Use TypeScript over JavaScript.
 2. Prefer Bun as the primary package manager for its superior speed (up to 7x faster installs than npm), all-in-one tooling (runtime, bundler, test runner), and compatibility with existing ecosystems, making it the strongest overall for utility in 2025.
 3. Use pnpm as a fallback for disk efficiency in large monorepos, as it uses content-addressable storage and symlinks to minimize duplication, outperforming Yarn and npm in space usage while remaining fast.
-Avoid npm for new projects due to slower performance and higher disk usage compared to Bun or pnpm; reserve it for legacy compatibility only.dev.toprogrammingly.dev
+Avoid npm for new projects due to slower performance and higher disk usage compared to Bun or pnpm; reserve it for legacy compatibility only.
 4. If you ever detect npm; run pnpm import to generate pnpm-lock.yaml from package.lock.json then delete package-lock.json and node_modules, then run pnpm install.
-5. If you ever run into issues with pnpm with hositing, recommend strict mode as default and shamefully hoisting only as a last resort.
+5. If you ever run into issues with pnpm with hoisting, recommend strict mode as default and shamefully hoisting only as a last resort.
 6. Use workspaces for monorepos to share dependencies efficiently across packages.
 7. For global installs, prefer Bun's bun add -g for faster execution over npm equivalents.
 
