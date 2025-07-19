@@ -1,3 +1,12 @@
+# Running Local Development Servers
+
+1. Always check for Start.md files or README.md to understand how to properly start the project.
+2. Fallback to package.json to understand how to start the project, otherwise look for scripts in shell or JavaScript/TypeScript to verify trigger starts are comprehensive.
+3. Always check for a Ports.md or README.md to understand how to properly port each server in development.
+4. For frontend servers, if the port is not specified default to localhost:3000, always check to see if the port is already running it before restarting it with the proper port kill command.
+5. For backend servers, if the port is not specified default to localhost:7000, always check to see if the port is already running it before restarting it with the proper port kill command.
+6. For mobile servers, if the port is not specified default to localhost:19000, always check to see if the port is already running it before restarting it with the proper port kill command.
+
 # Package Management
 
 # General
