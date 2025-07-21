@@ -15,6 +15,7 @@
 3. Choose declarative dependency formats (e.g., pyproject.toml in Python, Cargo.toml in Rust) over imperative ones for reproducibility and easier conflict resolution.
 4. Always lock dependencies with a lockfile (e.g., package-lock.json, poetry.lock) to ensure consistent installs across environments.
 5. Regularly update dependencies and scan for vulnerabilities using built-in tools (e.g., npm audit, cargo audit) or integrations like Dependabot.
+6. Before making any changes to package.json files please analyze the actual project directory entirely and make a plan about it prior to changing path variables for workspace variables.
 
 # JavaScript / TypeScript
 1. Use TypeScript over JavaScript.
@@ -109,6 +110,7 @@ Avoid npm for new projects due to slower performance and higher disk usage compa
 8. Commit code in small, atomic changes with clear, descriptive commit messages.
 9. Organize imports alphabetically, separating standard library, third-party, and local imports.
 10. Avoid trailing whitespace.
+11. Avoid truncating lists with etc. Always list all options.
 
 # Documentation
 1. Update documentation alongside code changes to keep it in sync.
